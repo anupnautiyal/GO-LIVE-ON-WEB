@@ -1,0 +1,174 @@
+@media (max-width: 1024px) {
+  .grid--3 { grid-template-columns: repeat(2, 1fr); }
+  .grid--4 { grid-template-columns: repeat(2, 1fr); }
+
+  .footer__grid {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-2xl);
+  }
+
+  .content-block {
+    gap: var(--spacing-2xl);
+  }
+
+  .stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --spacing-5xl: 4rem;
+    --spacing-4xl: 3rem;
+    --header-height: 70px;
+  }
+
+  h1 { font-size: var(--fs-4xl); }
+  h2 { font-size: var(--fs-3xl); }
+
+  .container {
+    padding: 0 var(--spacing-lg);
+  }
+
+  .section {
+    padding: var(--spacing-4xl) 0;
+  }
+
+  /* Header */
+  .header__nav {
+    display: none;
+  }
+
+  .header__cta {
+    display: none;
+  }
+
+  .nav-toggle {
+    display: flex;
+  }
+
+  .mobile-nav {
+    display: flex;
+  }
+
+  .social-bar {
+    display: none;
+  }
+
+  /* Grid */
+  .grid--2,
+  .grid--3,
+  .grid--4 {
+    grid-template-columns: 1fr;
+  }
+
+  .content-block {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-2xl);
+  }
+
+  .content-block:nth-child(even) .content-block__image {
+    order: -1;
+  }
+
+  /* Hero */
+  .hero__title {
+    font-size: clamp(2rem, 7vw, 3rem);
+  }
+
+  .hero__subtitle {
+    font-size: var(--fs-base);
+  }
+
+  .hero__actions {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero__scroll {
+    display: none;
+  }
+
+  /* Stats */
+  .stats {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-md);
+  }
+
+  .stat__number {
+    font-size: var(--fs-4xl);
+  }
+
+  /* Footer */
+  .footer__grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-2xl);
+  }
+
+  .footer__bottom {
+    flex-direction: column;
+    gap: var(--spacing-lg);
+    text-align: center;
+  }
+
+  .footer__socials {
+    justify-content: center;
+  }
+
+  /* Page Hero */
+  .page-hero {
+    min-height: 300px;
+    padding: calc(var(--header-height) + var(--spacing-2xl)) 0 var(--spacing-2xl);
+  }
+
+  /* Cards */
+  .card {
+    padding: var(--spacing-xl);
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --spacing-5xl: 3rem;
+    --spacing-4xl: 2rem;
+  }
+
+  .hero {
+    min-height: 100svh;
+  }
+
+  .hero__badge {
+    font-size: var(--fs-xs);
+  }
+
+  .hero__title {
+    font-size: clamp(1.75rem, 8vw, 2.5rem);
+  }
+
+  .stats {
+    grid-template-columns: 1fr;
+  }
+
+  .stat {
+    padding: var(--spacing-md);
+  }
+
+  .stat__number {
+    font-size: var(--fs-3xl);
+  }
+
+  .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .card {
+    padding: var(--spacing-lg);
+  }
+
+  .card__icon {
+    width: 52px;
+    height: 52px;
+    font-size: 1.5rem;
+  }
+}
